@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="wrapper">
         <div id="title" class="col-md-offset-3 col-md-9">
             <div class="jumbotron bg-home">
                 <h1 class="display-4" id="line">Contact Me</h1>
@@ -112,7 +112,52 @@
             </div>
         </div>  
         <!--/.nav-collapse -->
-      </div>
+        <hr>
+        <div id="footer">
+            <div class="row ">
+                <div class="col-6 text-left">
+                    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                        <a href="#"> andyliu.com</a>
+                    </div>
+                </div>
+                <div class="col-6 text-right">
+                    <ul class="social nav navbar-nav navbar-right nav-pills list-group list-group-horizontal">
+                        <li>
+                            <a href="http://facebook.com/" class="btn-facebook list-group-item">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class=" btn-instagram list-group-item">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="http://www.linkedin.com/in/"
+                                class="btn-linkedin list-group-item"
+                            >
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://github.com/broadmarkio"
+                                class="btn-github list-group-item"
+                            >
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="leet">
+                            <a href="#" class="list-group-item">
+                                <span class="iconify" data-icon="simple-icons:leetcode" data-inline="false"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -122,6 +167,11 @@
 <style scoped>
 .bg-home{
     width: 97%;
+}
+
+.wrapper{
+    height: 100%;
+    position: relative;
 }
 
 #line {
@@ -182,5 +232,35 @@ p > label {
     position: relative;
     top: 25px;
     margin-left: 50px;
+}
+
+#footer {
+    position: relative;
+    top: 150px;
+}
+
+#footer a{
+    background-color: transparent !important;
+    color: #66FCF1;
+}
+
+.leet {
+    position: relative;
+    bottom: 2px;
+}
+.footer-copyright {
+    color: #C5C6C7;
+}
+
+.social {
+    margin-left: 200px;
+}
+
+hr {
+    height: 0.5px;
+    background-color: #595959;
+    position: relative;
+    top: 150px;
+    margin-top: 250px;
 }
 </style>
